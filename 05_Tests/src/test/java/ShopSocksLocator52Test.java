@@ -28,81 +28,28 @@ public class ShopSocksLocator52Test {
         
         //1.2 https://qajava.skillbox.ru/index.html
         //Локатор на главной странице для всех элементов с тегом a и с атрибутом href с пустым значением, то есть равным «».
-        var shop121Locator = By.cssSelector("footer > div:first-child > a");
-        var shop122locator = By.cssSelector("footer > div:nth-child(2) > a");
-        var shop123Locator = By.cssSelector("footer > div:last-child > a");
+        var shop12Locator = By.cssSelector("a[href='']");
         
         //1.3 https://qajava.skillbox.ru/search.html
         //Локатор на странице поиска для всех элементов с тегом option и с атрибутом selected. Осуществите поиск только по атрибуту selected. 
-        var shop131Locator = By.cssSelector("option[selected]:first-child");
-        var shop132Locator = By.cssSelector("option[selected]:last-child");
+        var shop13Locator = By.cssSelector("[selected]");
         
         //1.4 https://qajava.skillbox.ru/index.html
         //Локатор на главной странице для элемента <div class="book-price">. Осуществите поиск одновременно по тегу и классу, равному book-price.
-        var shop141Locator = By.cssSelector("img[src='./img/book1.jpg'] ~ div[class='book-price']");
-        var shop142Locator = By.cssSelector("img[src='./img/book2.jpg'] ~ div[class='book-price']");
-        var shop143Locator = By.cssSelector("img[src='./img/book3.jpg'] ~ div[class='book-price']");
-        var shop144Locator = By.cssSelector("img[src='./img/book4.jpg'] ~ div[class='book-price']");
-        var shop145Locator = By.cssSelector("img[src='./img/book5.jpg'] ~ div[class='book-price']");
-        var shop146Locator = By.cssSelector("img[src='./img/book6.jpg'] ~ div[class='book-price']");
-        var shop147Locator = By.cssSelector("img[src='./img/book7.jpg'] ~ div[class='book-price']");
-        var shop148Locator = By.cssSelector("img[src='./img/book8.jpg'] ~ div[class='book-price']");
-        var shop149Locator = By.cssSelector("img[src='./img/book9.jpg'] ~ div[class='book-price']");
-        var shop1410Locator = By.cssSelector("img[src='./img/book10.jpg'] ~ div[class='book-price']");
-        var shop1411Locator = By.cssSelector("img[src='./img/book11.jpg'] ~ div[class='book-price']");
-        var shop1412Locator = By.cssSelector("img[src='./img/book12.jpg'] ~ div[class='book-price']");
-        var shop1413Locator = By.cssSelector("img[src='./img/book13.jpg'] ~ div[class='book-price']");
-        var shop1414Locator = By.cssSelector("img[src='./img/book14.jpg'] ~ div[class='book-price']");
-        var shop1415Locator = By.cssSelector("img[src='./img/book15.jpg'] ~ div[class='book-price']");
+        var shop14Locator = By.cssSelector("div[class='book-price']");
         
         //1.5 https://qajava.skillbox.ru/index.html
         //Локатор на главной странице  для всех элементов с тегом button и с атрибутом class, начинающимся на book.
-        var shop151Locator = By.cssSelector("img[src='./img/book1.jpg'] ~ div.book-price > button.book-add");
-        var shop152Locator = By.cssSelector("img[src='./img/book2.jpg'] ~ div.book-price > button.book-add");
-        var shop153Locator = By.cssSelector("img[src='./img/book3.jpg'] ~ div.book-price > button.book-add");
-        var shop154Locator = By.cssSelector("img[src='./img/book4.jpg'] ~ div.book-price > button.book-add");
-        var shop155Locator = By.cssSelector("img[src='./img/book5.jpg'] ~ div.book-price > button.book-add");
-        var shop156Locator = By.cssSelector("img[src='./img/book6.jpg'] ~ div.book-price > button.book-add");
-        var shop157Locator = By.cssSelector("img[src='./img/book7.jpg'] ~ div.book-price > button.book-add");
-        var shop158Locator = By.cssSelector("img[src='./img/book8.jpg'] ~ div.book-price > button.book-add");
-        var shop159Locator = By.cssSelector("img[src='./img/book9.jpg'] ~ div.book-price > button.book-add");
-        var shop1510Locator = By.cssSelector("img[src='./img/book10.jpg'] ~ div.book-price > button.book-add");
-        var shop1511Locator = By.cssSelector("img[src='./img/book11.jpg'] ~ div.book-price > button.book-add");
-        var shop1512Locator = By.cssSelector("img[src='./img/book12.jpg'] ~ div.book-price > button.book-add");
-        var shop1513Locator = By.cssSelector("img[src='./img/book13.jpg'] ~ div.book-price > button.book-add");
-        var shop1514Locator = By.cssSelector("img[src='./img/book14.jpg'] ~ div.book-price > button.book-add");
-        var shop1515Locator = By.cssSelector("img[src='./img/book15.jpg'] ~ div.book-price > button.book-add");
+        var shop15Locator = By.cssSelector("button[class^='book']");
         
         //1.6 https://qajava.skillbox.ru/index.html
         //Локатор на главной странице для всех элементов, у которых атрибут class заканчивается на main.
-        var shop161Locator = By.cssSelector("[class$='main'] :nth-child(1) > a ");
-        // Книги
-        var shop162Locator = By.cssSelector("[class$='main'] :nth-of-type(2) > a ");
-        // Новинки
-        var shop163Locator = By.cssSelector("[class$='main'] :nth-child(3) > a ");
-        // Бестселлеры
-        var shop164Locator = By.cssSelector("[class$='main'] :nth-child(4) > a ");
-        // Доставка и оплата
-        var shop165Locator = By.cssSelector("[class$='main'] :nth-child(5) > a ");
-        // Корзина
-        var shop166Locator = By.cssSelector("[class$='main'] :nth-child(6) > a ");
-        // Контакты
-        var shop167Locator = By.cssSelector("[class$='main'] :nth-child(7) > a ");
-        // Поиск
-        var shop168Locator = By.cssSelector("[class$='main'] :nth-child(8) > a ");
-        // Поддержка
-        
+        var shop16Locator = By.cssSelector("[class$=main]");
+       
         //1.7 https://qajava.skillbox.ru/index.html
         //Локатор на главной странице для всех элементов с тегом a и с атрибутом class, содержащим в себе слово menu.
-        var shop171Locator = By.cssSelector("a[class*='menu']:nth-child(1)");
-        var shop172Locator = By.cssSelector("a[class*='menu']:nth-child(2)");
-        var shop173Locator = By.cssSelector("a[class*='menu']:nth-child(3)");
-        var shop174Locator = By.cssSelector("a[class*='menu']:nth-child(4)");
-        var shop175Locator = By.cssSelector("a[class*='menu']:nth-child(5)");
-        var shop176Locator = By.cssSelector("a[class*='menu']:nth-child(6)");
-        var shop177Locator = By.cssSelector("a[class*='menu']:nth-child(7)");
-        var shop178Locator = By.cssSelector("a[class*='menu']:nth-child(8)");
-
+        var shop17Locator = By.cssSelector("a[class*='menu']");
+        
         //2.1 https://qajava.skillbox.ru/index.html 
         //найдите все теги div, которые являются дочерними элементами первого уровня у элемента <footer id="footer">.
         var shop211Locator = By.cssSelector("footer[id='footer'] > div:first-child");
