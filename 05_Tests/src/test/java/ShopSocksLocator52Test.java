@@ -56,12 +56,11 @@ public class ShopSocksLocator52Test {
         
         //2.2 https://qajava.skillbox.ru/index.html
         //найдите любой тег, который расположен сразу после <li id="genres">.
-        var shop22Locator = By.cssSelector("li[id='genres'] > :first-child");
+        var shop22Locator = By.cssSelector("li[id=genres] ~ li");
         
         //2.3 https://qajava.skillbox.ru/search.html 
         //найдите любые теги, которые расположены после <div class="filter-container"> (необязательно ближайший сосед).
-        var shop231Locator = By.cssSelector("div.filter-container ~ div");
-        var shop232Locator = By.cssSelector("div.filter-container ~ footer[id=footer]");
+        var shop23Locator = By.cssSelector("div.filter-container ~ footer[id=footer]");
 
         //3.1 https://qajava.skillbox.ru/module05/auth/index.html/ :
         //Первый тег h1, находящийся сразу на первом уровне вложенности внутри <section class="important-section-block" for="main-header-page">. Используйте поиск по первому child.
@@ -78,10 +77,6 @@ public class ShopSocksLocator52Test {
         //3.4 https://qajava.skillbox.ru/module05/auth/index.html/ :
         //Все элементы с тегом <a>, которые являются первым элементом своего родителя <div class="footer__menuList">. Используйте поиск по type.
         var shop341Locator = By.cssSelector("div.footer__menuList > [for*='buyTitle'] + a:nth-of-type(1)");
-        var shop342Locator = By.cssSelector("div.footer__menuList+div.footer__menuList:nth-child(2)>a:nth-of-type(1)");
-        var shop343Locator = By.cssSelector("div.footer__menuList+div.footer__menuList:nth-child(3)>a:nth-of-type(1)");
-        var shop344Locator = By.cssSelector("div.footer__menuList+div.footer__menuList:nth-child(4)>a:nth-of-type(1)");
-        var shop345Locator = By.cssSelector("div.footer__menuList+div.footer__menuList:nth-child(5)>a:nth-of-type(1)");
         
         //3.5 https://qajava.skillbox.ru/module05/auth/index.html/ :
         //По желанию: найдите элемент с тегом <a>, который является первым дочерним элементом данного типа у своего родителя <div class="footer__menuList">, при этом <div class="footer__menuList">
