@@ -14,7 +14,7 @@ import javax.swing.text.html.CSS;
    <p>Вторая запись</p>  <!-- Нужен этот элемент -->
 </section>
 
-    Локатор: $$("section.header p")
+    Локатор: $$("p")
 
 
     2.b.
