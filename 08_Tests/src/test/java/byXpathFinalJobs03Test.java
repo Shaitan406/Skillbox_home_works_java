@@ -31,7 +31,7 @@ public class byXpathFinalJobs03Test {
         var theStoreElement = By.xpath("//a[@test-info='about-us']");
 
         //2.Заголовок «Бестселлеры».
-        var bestselleryElement = By.xpath("//ul[@class='menu-main']/li/a[@href='pages/bestsellers.html']");
+        var bestselleryElement = By.xpath("(//*[text()='Бестселлеры'])[2]");
 
         //3.Строка поиска.
         var poiskElement = By.xpath("//*[@id='search-input']");
