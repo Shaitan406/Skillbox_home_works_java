@@ -32,7 +32,7 @@ public class byXpachFinalJobs02Test {
         var zagolovokElement  = By.xpath("(//*[@class='baseCard__title'])[5]");
 
         //2.Элемент с учебным периодом последнего курса.
-        var elementLastWell = By.xpath("(//p)[24]");
+        var elementLastWell = By.xpath("(//div[@class='baseCondition']//p)[last()]");
 
         //3.Необязательное задание. Все div, которые являются непосредственными родителями для ссылок с href='#'.
         var divElement = By.xpath("//a[@href='#']/parent::div");
